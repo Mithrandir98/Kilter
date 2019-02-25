@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Kilter</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="sg.js"></script>
+  <script src="lg.js"></script>
+  <link rel="stylesheet" href="log.css">
+</head>
+<body>
+    <div class="jumbotron text-center" id="je">
+        <h1 class="display-3" id="he">Kilter</h1>
+        <p class="lead" id="pe">All the help you need, in one place.</p>
+        <hr class="my-2">
+        <p id="ke">Kilter is here to help you with all your mental health needs. We here at Kilter wish to help you overcome any mental health issues you may have. You can set appointments to meet with a counsuler or simply chat with them online.</p>
+      </div>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="home.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li>
+          <a class="nav-link" href="#">Appointment</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Chat</a>
+        </li>
+      </ul>
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+   
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required><br/>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"><a href="#" style="text-decoration:none">Forgot password?</a></span>
+    </div>
+  </form>
+</div>
+<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+    </div>
+  </nav>
+  <br>
+  <div class="card-deck">
+  <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Health Tip of the Day:</h4>
+        <h6 class="card-subtitle mb-2 text-muted">Don't skip breakfast</h6>
+        <p class="card-text">
+            Studies show that eating a proper breakfast is one of the most positive things you can do if you are trying to lose weight. Breakfast skippers tend to gain weight. 
+        </p>        
+      </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">How to handle stress:</h4>
+          <h6 class="card-subtitle mb-2 text-muted">Stress is not something to ignore</h6>
+          <p class="card-text">
+            Stress has ways to creep up on you. Whether it be homework, projects, or even if you no time, just take a moment and relax. Let yourself 5 minutes, with your mind blank, and just relax. Here are some links for stress relif.
+          </p>
+          <a href="https://www.healthline.com/nutrition/16-ways-relieve-stress-anxiety" class="card-link">16 Tips</a>
+          
+        </div>
+      </div>
+      <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Awareness:</h4>
+            <h6 class="card-subtitle mb-2 text-muted">How to detect if someone is suffering from issues</h6>
+            <p class="card-text">
+              Mental health is a serious issue and we must do anything we can to help those in need. If you or your friend, family member, relative or anyone exhibits any of these, urge them to get help either with Kilter or a liscensed professional. Use the link to detect symptoms. 
+            </p>
+            <a href="https://screening.mentalhealthamerica.net/screening-tools" class="card-link">Tests</a>
+            
+          </div>
+        </div>
+      </div>
+          <br><br><br>
+
+          <p id="oe" class="text-center">Mental health is a very serious issue and we here at Kilter strive to help those in need of it. Kilter offers two kinds of services. Set an appointment with a counsuler or talk to them anonymously through a chat room. 
+          </p>
+          <br><br><br>
+          <p id="oe">To set an appointment, simply click here: <button type="button" class="btn btn-primary btn" id="be">Set appointment</button></p>
+          <p id="oe">To chat with a counsuler, click here: <button type="button" class="btn btn-primary btn" id="be">Chat</button></p>
+</body>
+</html>
