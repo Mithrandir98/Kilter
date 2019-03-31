@@ -16,17 +16,19 @@ body {
 }
 
 #je{
-    background-color: black;
+    background-color: #D542CD;
     color: white;
 }
 
 #ke{
-    color: greenyellow;
-    font-size: 1.05rem;
+    color: white;
+    font-size: 1.35rem;
 }
 
 #he{
     color: aqua;
+    font-family: sans-serif;
+    text-decoration: underline;
 }
 
 #pe{
@@ -125,14 +127,18 @@ span.psw {
   -webkit-animation: animatezoom 0.6s;
   animation: animatezoom 0.6s
 }
-
+.nav-link
+{
+  font-family: sans-serif;
+  font-color:black;
+}
 @-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
+  from {-webkit-transform: scale(0)}
   to {-webkit-transform: scale(1)}
 }
-  
+
 @keyframes animatezoom {
-  from {transform: scale(0)} 
+  from {transform: scale(0)}
   to {transform: scale(1)}
 }
 
